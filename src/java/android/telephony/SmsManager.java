@@ -820,7 +820,7 @@ public final class SmsManager {
             Log.e(TAG, "Exception in getSubscriptionId");
         }
 
-        if (isSmsSimPickActivityNeeded) {
+        if (isSmsSimPickActivityNeeded && false) {
             Log.d(TAG, "getSubscriptionId isSmsSimPickActivityNeeded is true");
             // ask the user for a default SMS SIM.
             Intent intent = new Intent();
