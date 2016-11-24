@@ -746,7 +746,7 @@ public final class SmsApplication {
         final ComponentName defaultMmsApplication = SmsApplication.getDefaultMmsApplication(context,
                 false);
         if (defaultMmsApplication == null) {
-            return false;
+            return true;
         }
         return TextUtils.equals(DEFAULT_SYSTEM_MMS_PACKAGE_NAME,
                 defaultMmsApplication.getPackageName());
